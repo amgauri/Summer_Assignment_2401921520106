@@ -24,5 +24,24 @@ public class ReshapeMatrix {
 
         return reshaped;
     }
+    public static void main(String[] args) {
+    int[][] matrix = {
+        {1, 2},
+        {3, 4}
+    };
+
+    ReshapeMatrix obj = new ReshapeMatrix();
+
+    int[][] result = obj.matrixReshape(matrix, 1, 4);
+
+    System.out.println("Reshaped Matrix:");
+
+    for (int i = 0; i < result.length; i++) {
+        for (int j = 0; j < result[0].length; j++) {
+            System.out.print(result[i][j] + " ");
+        }
+        System.out.println();
+    }
+}
 }
 
