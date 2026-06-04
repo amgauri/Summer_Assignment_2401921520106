@@ -42,5 +42,19 @@ public class SpiralMatrix {
 
         return output;
     }
+    public static void main(String[] args) {
+    int[][] matrix = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    SpiralMatrix obj = new SpiralMatrix();
+
+    List<Integer> result = obj.spiralOrder(matrix);
+
+    System.out.println("Spiral Order:");
+    System.out.println(result);
+}
 } 
 
